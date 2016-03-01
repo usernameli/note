@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.li.notebook"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.li.notebook.WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.li.notebook.MainActivity" >
+        </activity>
+        <activity android:name="com.li.notebook.AddActivity" >
+        </activity>
+        <activity android:name="com.li.notebook.MineActivity" >
+        </activity>
+        <activity android:name="com.li.notebook.AboutUsActivity" >
+        </activity>
+        <activity android:name="com.li.notebook.UserFeedBackActivity" >
+        </activity>
+        <activity
+            android:name="com.li.add.ImageGridActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.li.add.PublishedActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.li.add.PhotoActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.li.add.TestPicActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.li.add.ChangePublishedActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+    </application>
+
+</manifest>

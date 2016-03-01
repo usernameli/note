@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titel_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/titel_bg" >
+
+        <ImageView
+            android:id="@+id/add_iv_person"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:onClick="mine"
+            android:background="@drawable/person" />
+
+        
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".MainActivity" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/main_bg" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <GridLayout
+                    android:id="@+id/grid1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:scrollX="0dp"
+                    android:scrollY="0dp" >
+                </GridLayout>
+
+                <GridLayout
+                    android:id="@+id/grid2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:scrollX="0dp"
+                    android:scrollY="0dp" >
+                </GridLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/add" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/titel_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/titel_bg" >
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="30dp"
+                android:text="用户反馈"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:paddingLeft="25dp"
+                android:paddingRight="30dp"
+                android:text="返回"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right"
+                android:paddingLeft="25dp"
+                android:paddingRight="30dp"
+                android:text="发送"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="给小咖打分"
+            android:textSize="12sp" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:numStars="5"
+            android:progressDrawable="@drawable/start_rating"
+            android:rating="5"
+            android:stepSize="1" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="start|top"
+            android:layout_margin="20dp"
+            android:background="@drawable/edittext_bg" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/reminder" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:progressDrawable="@drawable/start_rating"
+        android:rating="5"
+        android:stepSize="1" />
+
+</LinearLayout>
